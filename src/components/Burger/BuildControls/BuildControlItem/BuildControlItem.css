@@ -1,11 +1,11 @@
-.BuildControl {
+.BuildControlItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
 }
 
-.BuildControl button {
+.BuildControlItem button {
     display: block;
     font: inherit;
     padding: 5px;
@@ -16,14 +16,14 @@
     outline: none;
 }
 
-.BuildControl button:disabled {
+.BuildControlItem button:disabled {
     background-color: #AC9980;
     border: 1px solid #7E7365;
     color: #ccc;
     cursor: default;
 }
 
-.BuildControl button:hover:disabled {
+.BuildControlItem button:hover:disabled {
     background-color: #AC9980;
     color: #ccc;
     cursor: not-allowed;
@@ -35,7 +35,7 @@
     width: 80px;
 }
 
-.BuildControl .Less {
+.BuildControlItem .Less {
     background-color: #D39952;
     color: white;
     margin: 0 10px;
