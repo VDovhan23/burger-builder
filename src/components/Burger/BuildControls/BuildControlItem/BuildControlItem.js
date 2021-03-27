@@ -4,10 +4,13 @@ import classes from './BuildControlItem.css'
 
 const buildControlItem = (props) => (
 
-    <div className={classes.BuildControl}>
+    <div className={classes.BuildControlItem}>
         <div className={classes.Label}>{props.label}</div>
-        <div className={classes.Less}>Les</div>
-        <div className={classes.More}>More</div>
+        <div className={classes.Less}
+             onClick={props.removed}
+             disabled={props.disabled}
+        >Les</div>
+        <div className={classes.More} onClick={props.added}>More</div>
     </div>
 )
 
